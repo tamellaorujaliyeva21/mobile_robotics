@@ -1,0 +1,29 @@
+ORIGIN: S rectangle center, +X right, +Y up, units cm
+START_HEADING: 180        # facing left on the S rectangle
+AXLE_TO_SENSOR_CM: 9 is located on the right front of the robot 
+WHEEL_DIAMETER_CM: 5.57
+TRACK_WIDTH_CM: from 2.0 to 3.0
+
+NODES (name, x, y, type)
+S,   0.0, 0.0, start
+C,   -7.0,   26.5,   junction   # marker patch
+N,   46.0,   47.5,   junction   # marker patch
+K,   86.5,   67.0,   junction   # marker patch
+M,   46.0,   -16.0,   junction   # marker patch
+D1,  -7.0,   16.0,   deadend
+D2,  80.0,   54.5,   deadend
+D4,  -12.0,  -11.5,   deadend
+G1,  101.0,   19.0,   goal
+G2,  85.0,   -16.0,   goal
+
+EDGES (from, to, tape_length_cm, leave_heading, arrive_heading)
+S, C,   78.5, 180, 0      # left, up, right
+C, D1,  10.0, 270, 270    # short stub down
+C, N,   100.5, 90,  30     # up, right, down, right, short diagonal
+N, K,   49.5, 30,  0      # diagonal, then right
+K, D2,  20.0, 270, 270    # short stub down
+K, G1,  58.5, 0,   270    # right, then down
+N, M,   63.5, 270, 270    # the amber segment (~90 cm per your slide)
+M, G2,  39.0, 0,   0
+S, M,   59.0, 0,   0      # right, down, right (robot must turn around first)
+S, D4,  24.5, 225, 180    # diagonal down-left, down, left

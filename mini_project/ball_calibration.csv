@@ -1,0 +1,9 @@
+trial,timestamp,position,manual_distance_cm,ultrasonic_distance_cm,candidate_found,confirmed,center_x,center_y,radius_px,edge_coverage,ball_visible,detection_correct,image_file
+1,2026-11-19T04:41:56,Position_1,20.0,30.35,True,True,261,183,88,0.417,True,True,/home/robotics-26-tm/ball_calibration_images/trial_001.jpg
+2,2026-11-19T04:43:08,closer about 11 cm,10.0,10.78,True,True,361,303,115,0.75,True,True,/home/robotics-26-tm/ball_calibration_images/trial_002.jpg
+3,2026-11-19T04:44:25,far test,30.0,54.72,True,True,363,230,50,1.0,True,True,/home/robotics-26-tm/ball_calibration_images/trial_003.jpg
+4,2026-11-19T04:45:53,test with messy table,17.5,39.08,True,True,158,184,64,0.5,True,False,/home/robotics-26-tm/ball_calibration_images/trial_004.jpg
+5,2026-11-19T05:41:07,Position_5,17.5,13.62,True,True,150,236,22,1.0,True,False,/home/robotics-26-tm/ball_calibration_images/trial_005.jpg
+6,2026-11-19T05:42:32,2 in front just pick any bro,21.0,14.25,True,True,247,267,54,0.979,True,True,/home/robotics-26-tm/ball_calibration_images/trial_006.jpg
+7,2026-11-19T05:43:43,green further,29.0,57.42,True,False,403,224,40,0.917,True,True,/home/robotics-26-tm/ball_calibration_images/trial_007.jpg
+8,2026-11-19T05:45:21,green and the back,19.0,24.2,True,False,361,122,21,0.812,True,False,/home/robotics-26-tm/ball_calibration_images/trial_008.jpg
